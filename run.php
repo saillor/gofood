@@ -37,7 +37,7 @@ function change()
         			for($a=1;$a<=3;$a++){
         			echo color("yellow",".");
         			sleep(1);}
-        			$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"G-FNF7B6D"}');
+        			$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGORIDE"}');
         			$message = fetch_value($code1,'"message":"','"');
         			if(strpos($code1, 'Promo kamu sudah bisa dipakai'))
 				{
@@ -47,13 +47,13 @@ function change()
 				else
 				{
         				echo "\n".color("red","Message : ".$message);
-        				echo "\n".color("yellow","Claim voc 20k");
+        				echo "\n".color("yellow","Claim voc cobagoride");
         				echo "\n".color("yellow","Please wait");
         				for($a=1;$a<=3;$a++){
         				echo color("yellow",".");
         				sleep(1);}
         				sleep(3);
-        				$santai11 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"G-6vzljms"}');
+        				$santai11 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOCAR"}');
         				$messagesantai11 = fetch_value($santai11,'"message":"','"');
         				if(strpos($santai11, 'Promo kamu sudah bisa dipakai.'))
 					{
@@ -63,13 +63,13 @@ function change()
 					else
 					{
         					echo "\n".color("red","Message : ".$messagesantai11);
-        					echo "\n".color("yellow","Claim voc 15k");
+        					echo "\n".color("yellow","Claim voc Cobagocar");
        						echo "\n".color("yellow","Please wait");
         					for($a=1;$a<=3;$a++){
         					echo color("yellow",".");
         					sleep(1);}
         					sleep(3);
-        					$santai08 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"G-43cgvqx"}');
+        					$santai08 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGORIDE"}');
         					$messagesantai08 = fetch_value($santai08,'"message":"','"');
         					if(strpos($santai08, 'Promo kamu sudah bisa dipakai.'))
 						{
@@ -86,7 +86,7 @@ function change()
         						echo color("yellow",".");
         						sleep(1);}
         						sleep(3);
-        						$goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGORIDE"}');
+        						$goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOJEK"}');
         						$message1 = fetch_value($goride,'"message":"','"');
         						echo "\n".color("green","Message : ".$message1);
         						echo "\n".color("yellow","Claim voc COBAGOCAR");
